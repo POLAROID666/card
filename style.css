@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+.card_main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 243, 234);
+    margin: 200px 0;
+    justify-content: center;
+}
+.card{
+    width: 580px;
+    height: 440px;
+    box-shadow: 1px 1px 3px #333333;
+    display: flex;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.card_img{
+    width: 100%;
+}
+
+.card_img img{
+    height: 100%;
+}
+
+.card_info{
+    display: block;
+    margin: 25px;
+}
+
+.card_info h3{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+.card_info h2{
+    font-size: 32px;
+    line-height: 100%;
+    color: #072502;
+    font-family: 'Fraunces', serif;
+    margin: 20px 0;
+}
+
+.card_info p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+
+.price_new{
+    color: #285c1f;
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+}
+
+.price_old{
+    font-size: 14px;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #666666;
+    margin-left: 10px;
+}
+
+.button button{
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 20px;
+    background-color: #285c1f;
+    cursor: pointer;
+}
+
+.button button img{
+    margin-right: 10px;
+}
+
+
+@media (max-width: 1199px){
+    .container{
+        width: 720px;
+    }
+    .card{
+        display: inline;
+        width: 300px;
+        height: 600px;
+    }
+    .card_img img{
+        object-fit: cover;
+        background-position: center;
+        width: 100%;
+        max-height: 280px;
+    }
+    .card_info{
+        margin: 20px;
+    }
+    br{
+        display: none;
+    }
+    .card_info h2{
+        margin: 10px 0;
+    }
+    .card_info p{
+        margin-bottom: 10px;
+    }
+    .button button{
+        margin-top: 10px;
+    }
+}
